@@ -1,0 +1,34 @@
+title = "Azure Collected"
+baseURL = "https://azurecollected.com"
+languageCode = "en-us"
+theme = "ananke"
+
+MetaDataFormat = "yaml"
+DefaultContentLanguage = "en"
+SectionPagesMenu = "main"
+Paginate = 7 # this is set low for demonstrating with dummy content. Set to a higher number
+googleAnalytics = "166614556-1"
+enableRobotsTXT = true
+
+[sitemap]
+  changefreq = "daily"
+  priority = 0.7
+  filename = "sitemap.xml"
+
+[params]
+  favicon = ""
+  description = "Azure Collected is a link site for Azure related content. We find the best Azure blog posts, podcast episodes and videos on the web."
+  facebook = ""
+  twitter = "https://twitter.com/NRKirby"
+  instagram = ""
+  youtube = ""
+  github = ""
+  gitlab = ""
+  linkedin = ""
+  mastodon = ""
+  slack = ""
+  stackoverflow = ""
+  # choose a background color from any on this page: http://tachyons.io/docs/themes/skins/ and preface it with "bg-"
+  background_color_class = "bg-black"
+  featured_image = "/img/header.png"
+  recent_posts_number = 5
