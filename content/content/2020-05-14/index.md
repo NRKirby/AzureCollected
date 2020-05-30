@@ -3,6 +3,9 @@ title: "Thursday 14th May"
 date: 2020-05-14T12:08:02+01:00
 description: "Azure content from Azure Blog, Build5Nines and Thorsten Hans"
 draft: false
+hasBlog: true
+hasPodcast: false
+hasVideo: false
 ---
 
 ## Blog

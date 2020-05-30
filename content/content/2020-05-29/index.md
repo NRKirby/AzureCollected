@@ -3,6 +3,9 @@ title: Friday 29th May
 date: 2020-05-29
 description: Azure content from Channel 9, Daily .NET Tips, John Papa, Microsoft Azure Blog, Microsoft Azure for Industry Podcast, Microsoft Data Migration
 draft: false
+hasBlog: true
+hasPodcast: true
+hasVideo: true
 ---
 
 

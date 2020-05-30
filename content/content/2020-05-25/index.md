@@ -3,6 +3,9 @@ title: Monday 25th May
 date: 2020-05-25
 description: Azure content from ASP.NET Monsters, Microsoft Data Migration, Premier Developer, Thomas Maurer
 draft: false
+hasBlog: true
+hasPodcast: false
+hasVideo: false
 ---
 
 

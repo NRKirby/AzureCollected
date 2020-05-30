@@ -3,6 +3,9 @@ title: Wednesday 27th May
 date: 2020-05-27
 description: Azure content from Microsoft Azure Blog, Sound Code - Mark Heath's Blog
 draft: false
+hasBlog: true
+hasPodcast: false
+hasVideo: true
 ---
 
 

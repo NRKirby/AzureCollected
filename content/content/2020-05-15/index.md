@@ -3,6 +3,9 @@ title: "Friday 15th May"
 date: 2020-05-15T05:57:29+01:00
 description: "Azure content from Thomas Maurer, Daniel's Tech Blog, Talk Blog, Premier Developer, Build5Nines and Microsoft Data Migration,  Microsoft Azure for Industry Podcast, Azure Security Podcast and Channel 9"
 draft: false
+hasBlog: true
+hasPodcast: true
+hasVideo: true
 ---
 
 ## Blog

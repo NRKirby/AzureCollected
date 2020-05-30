@@ -3,6 +3,9 @@ title: Tuesday 26th May
 date: 2020-05-26
 description: Azure content from Azure DevOps Podcast, Thomas Maurer
 draft: false
+hasBlog: true
+hasPodcast: true
+hasVideo: false
 ---
 
 

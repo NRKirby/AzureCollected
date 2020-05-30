@@ -3,6 +3,9 @@ title: "Monday 18th May"
 date: 2020-05-18T00:00:00+01:00
 description: "Azure content from Microsoft Data Migration, Premier Developer, Daily .NET Tips, Azure Podcast and Azure Friday"
 draft: false
+hasBlog: true
+hasPodcast: true
+hasVideo: true
 ---
 
 ## Blog
