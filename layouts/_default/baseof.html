@@ -88,11 +88,11 @@
           <div class="flex items-center">
             <div class="md:block">
               <div class="px-4 py-2 flex items-baseline">
-                <a href="https://azurecollected.com"
+                <a href="{{ .Site.BaseURL}}"
                   class="text-md md:text-xl font-medium text-white hover:text-gray-300">
                   Azure Collected
                 </a>
-                <a href="https://azurecollected.com"
+                <a href="{{ .Site.BaseURL}}/content"
                   class="hidden md:block ml-16 text-sm md:text-lg text-white hover:text-gray-300">
                   All content
                 </a>
@@ -136,7 +136,9 @@
     </div>
     <div class="hidden" id="menu">
       <div class="px-2 pt-2 pb-3 sm:px-3">
-        <a href="https://azurecollected.com/content/"
+        <a href="{{ .Site.BaseURL}}"
+        class="block px-3 py-2 rounded-md text-base font-medium text-white focus:outline-none focus:text-white focus:bg-red-800">Home</a>
+        <a href="{{ .Site.BaseURL}}/content/"
           class="block px-3 py-2 rounded-md text-base font-medium text-white focus:outline-none focus:text-white focus:bg-red-800">All
           content</a>
         <!-- <a href="#/"
