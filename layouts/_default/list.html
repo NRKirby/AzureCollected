@@ -5,10 +5,10 @@
         <h2 class="text-center md:text-left text-3xl font-semibold pt-8 pb-4 px-4">
             All content
         </h2>
-        <div class="mt-8 grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div class="mt-8 grid grid-cols-1 md:grid-cols-3 gap-4">
             {{ range .Pages }}
             <div class="max-w-xs mx-auto my-2 rounded overflow-hidden shadow-lg hover:shadow-outline">
-                <a href="https://azurecollected.com/content/2020-05-28/" class="min-h-full">
+                <a href="{{ .Permalink }}" class="min-h-full">
                     <div class="px-4 py-2 flex flex-col h-full">
                         <div class="text-gray-700 text-xl mb-2">{{ .Title }}</div>
                         <p class="text-gray-600 text-base">
