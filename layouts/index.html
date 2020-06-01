@@ -1,4 +1,3 @@
-
 {{ define "main" }}
 {{/* Define a section to pull recent posts from. For Hugo 0.20 this will default to the section with the most number of pages. */}}
 {{ $mainSections := .Site.Params.mainSections | default (slice "post") }}
@@ -7,47 +6,59 @@
 {{/* Check to see if the section is defined for ranging through it */}}
 {{ $section_count := len $section }}
 {{ if ge $section_count 1 }}
-  {{/* Derive the section name  */}}
-  {{ $section_name := index (.Site.Params.mainSections) 0 }}
+{{/* Derive the section name  */}}
+{{ $section_name := index (.Site.Params.mainSections) 0 }}
 
-  <div class="pa3 pa4-ns w-100 w-70-ns center">
+<div class="container mx-auto max-w-6xl">
+  <div class="text-center text-gray-700">
+    <hr>
     {{/* Use $section_name to get the section title. Use "with" to only show it if it exists */}}
-     {{ with .Site.GetPage "section" $section_name }}
-        <h1 class="flex-none">
-          {{ $.Param "recent_copy" | default (i18n "recentTitle" .) }}
-        </h1>
-      {{ end }}
-
-    {{ $n_posts := $.Param "recent_posts_number" | default 3 }}
-
-    <section class="w-100 mw8">
-      {{/* Range through the first $n_posts items of the section */}}
-      {{ range (first $n_posts $section) }}
-        <div class="relative w-100">
-          {{ partial "summary-with-image.html" . }}
-        </div>
-      {{ end }}
-    </section>
-
-    {{ if ge $section_count (add $n_posts 1) }}
-    <section class="w-100">
-      <h1 class="f3">{{ i18n "more" }}</h1>
-      {{/* Now, range through the next four after the initial $n_posts items. Nest the requirements, "after" then "first" on the outside */}}
-      {{ range (first 4 (after $n_posts $section))  }}
-        <h2 class="f5 fw4 mb4 dib mr3">
-          <a href="{{ .Permalink }}" class="link black dim">
-            {{ .Title }}
-          </a>
-        </h2>
-      {{ end }}
-
-      {{/* As above, Use $section_name to get the section title, and URL. Use "with" to only show it if it exists */}}
-      {{ with .Site.GetPage "section" $section_name }}
-        <a href="{{ .Permalink }}" class="link db f6 pa2 br3 bg-mid-gray white dim w4 tc">{{ i18n "allTitle" . }}</a>
-      {{ end }}
-      </section>
+    {{ with .Site.GetPage "section" $section_name }}
+    <h2 class="text-center md:text-left text-3xl font-semibold pt-8 pb-4 px-4">
+      {{ $.Param "recent_copy" | default (i18n "recentTitle" .) }}</h2>
     {{ end }}
 
+    {{ $n_posts := $.Param "recent_posts_number" | default 3 }}
+    <div class="mt-8 grid grid-cols-1 md:grid-cols-2 gap-4">
+      {{/* Range through the first $n_posts items of the section */}}
+      {{ range (first $n_posts $section) }}
+      <div class="max-w-xs mx-auto my-2 rounded overflow-hidden shadow-lg hover:shadow-outline">
+        <a href="{{.Permalink}}" class="min-h-full">
+          <div class="px-4 py-2 flex flex-col h-full">
+            <div class="text-gray-700 text-xl mb-2">{{ .Title }}</div>
+            <p class="text-gray-600 text-base">
+              {{ .Description }}
+            </p>
+            <div class="mt-auto">
+              <div class="flex items-center justify-center pt-8 pb-2">
+                {{ if .Params.HasBlog }}
+                <span
+                  class="inline-flex items-center px-3 py-1 mx-1 rounded-full text-sm font-medium leading-5 bg-purple-200 text-purple-800">
+                  Blog
+                </span>
+                {{ end }}
+
+                {{ if .Params.HasPodcast }}
+                <span
+                  class="inline-flex items-center px-3 py-1 mx-1 rounded-full text-sm font-medium leading-5 bg-orange-200 text-orange-800">
+                  Podcast
+                </span>
+                {{ end }}
+
+                {{ if .Params.HasVideo }}
+                <span
+                  class="inline-flex items-center  px-3 py-1 mx-1 rounded-full text-sm font-medium leading-5 bg-teal-200 text-teal-800">
+                  Video
+                </span>
+                {{ end }}
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+      {{ end }}
     </div>
+  </div>
+</div>
 {{ end }}
 {{ end }}
