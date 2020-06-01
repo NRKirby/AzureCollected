@@ -1,5 +1,5 @@
 ---
-title: Monday 01st June
+title: Monday 1st June
 date: 2020-06-01
 description: Azure content from Daily .NET Tips, Microsoft Data Migration, Premier Developer
 draft: false
