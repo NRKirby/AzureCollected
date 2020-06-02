@@ -1,0 +1,14 @@
+{{ define "header" }}{{ partial "page-header.html" . }}{{ end }}
+{{ define "main" }}
+<div class="container mx-auto max-w-6xl">
+    <div class="text-gray-00">
+        <h1 class="text-center md:text-left text-3xl font-semibold pt-8 pb-4 px-4">
+            {{ .Title }}
+        </h1>
+        <hr>
+        <div class="px-4 py-8 leading-loose text-lg">
+            {{ .Content }}
+        </div>
+    </div>
+</div>
+{{ end }}

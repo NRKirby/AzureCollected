@@ -43,11 +43,6 @@
   <meta property="og:title" content="{{ .Title }}" />
   <meta property="og:url" content="{{ .Permalink }}" />
 
-  <!-- {{ $stylesheet := .Site.Data.webpack_assets.app }}
-  {{ with $stylesheet.css }}
-  <link href="{{ relURL (printf "%s%s" "dist/" .) }}" rel="stylesheet">
-  {{ end }} -->
-
   {{ range .Site.Params.custom_css }}
   <link rel="stylesheet" href="{{ relURL ($.Site.BaseURL) }}{{ . }}">
   {{ end }}
@@ -89,13 +84,16 @@
           <div class="flex items-center">
             <div class="md:block">
               <div class="px-4 py-2 flex items-baseline">
-                <a href="{{ .Site.BaseURL}}"
-                  class="text-md md:text-xl font-medium text-white hover:text-gray-300">
+                <a href="{{ .Site.BaseURL}}" class="text-md md:text-xl font-medium text-white hover:text-gray-300">
                   Azure Collected
                 </a>
                 <a href="{{ .Site.BaseURL}}/content"
-                  class="hidden md:block ml-16 text-sm md:text-lg text-white hover:text-gray-300">
+                  class="hidden md:block ml-16 font-normal text-sm md:text-lg text-white hover:text-gray-300">
                   All content
+                </a>
+                <a href="{{ .Site.BaseURL}}/about"
+                  class="hidden  md:block ml-4 font-normal  text-sm md:text-lg text-white hover:text-gray-300">
+                  About
                 </a>
               </div>
             </div>
@@ -137,13 +135,14 @@
     </div>
     <div class="hidden" id="menu">
       <div class="px-2 pt-2 pb-3 sm:px-3">
-        <a href="{{ .Site.BaseURL}}"
-        class="block px-3 py-2 rounded-md text-base font-medium text-white focus:outline-none focus:text-white focus:bg-red-800">Home</a>
         <a href="{{ .Site.BaseURL}}/content/"
-          class="block px-3 py-2 rounded-md text-base font-medium text-white focus:outline-none focus:text-white focus:bg-red-800">All
-          content</a>
-        <!-- <a href="#/"
-                  class="block px-3 py-2 rounded-md text-base font-medium text-white focus:outline-none focus:text-white focus:bg-red-800">About</a> -->
+          class="block px-3 py-2 rounded-md text-base font-medium text-white focus:outline-none focus:text-white focus:bg-blue-800">
+          All content
+        </a>
+        <a href="{{ .Site.BaseURL}}/about/"
+          class="block px-3 py-2 rounded-md text-base font-medium text-white focus:outline-none focus:text-white focus:bg-blue-800">
+          About
+        </a>
       </div>
       <div>
         <div class="pt-4 pb-3 border-t border-white">
@@ -182,12 +181,11 @@
               All content
             </a>
           </div>
-          <!-- <div class="px-5 py-2">
-                      <a href="#" class="text-base leading-6 text-gray-500 hover:text-gray-900">
-                          About
-                      </a>
-                  </div> -->
-
+          <div class="px-5 py-2">
+            <a href="{{ .Site.BaseURL}}/about/" class="text-base leading-6 text-gray-500 hover:text-gray-900">
+              About
+            </a>
+          </div>
         </nav>
         <div class="mt-8 flex justify-center">
           <a href="https://twitter.com/NRKirby" class="text-gray-400 hover:text-gray-500">
@@ -226,4 +224,5 @@
     }
   </script>
 </body>
+
 </html>
