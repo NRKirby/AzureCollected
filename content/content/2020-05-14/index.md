@@ -1,5 +1,5 @@
 {
-    "title": "Thursday 14th May",
+    "title": "Thursday 14th May 2020",
     "date": "2020-05-14T12:08:02+01:00",
     "description": "Azure content from Azure Blog, Build5Nines and Thorsten Hans",
     "draft": false,

@@ -1,5 +1,5 @@
 {
-    "title": "Tuesday 19th May",
+    "title": "Tuesday 19th May 2020",
     "date": "2020-05-19T00:00:00+01:00",
     "description": "Azure content from MSBuild, Pete Codes blog, Code It Yourself, Visual Studio Geeks, Abhijit's Blog and Channel 9",
     "draft": false,

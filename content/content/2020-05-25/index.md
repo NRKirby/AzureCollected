@@ -1,5 +1,5 @@
 {
-    "title": "Monday 25th May",
+    "title": "Monday 25th May 2020",
     "date": "2020-05-25",
     "description": "Azure content from ASP.NET Monsters, Microsoft Data Migration, Premier Developer, Thomas Maurer",
     "draft": false,

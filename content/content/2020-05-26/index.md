@@ -1,5 +1,5 @@
 {
-    "title": "Tuesday 26th May",
+    "title": "Tuesday 26th May 2020",
     "date": "2020-05-26",
     "description": "Azure content from Azure DevOps Podcast, Thomas Maurer",
     "draft": false,

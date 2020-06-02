@@ -1,5 +1,5 @@
 {
-    "title": "Wednesday 20th May",
+    "title": "Wednesday 20th May 2020",
     "date": "2020-05-20T00:00:00+01:00",
     "description": "Azure content from MSBuild, Build5Nines, Microsoft Azure Blog, Azure Cosmos DB Blog, Gunnar Piepman Programming Blog, ITOps Tech Blog, Premier Developer, csharp.christiannagel.com, Azure Devops Podcast, Microsoft Cloud Show, Channel 9",
     "draft": false,

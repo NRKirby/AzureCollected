@@ -1,5 +1,5 @@
 {
-    "title": "Friday 22nd May",
+    "title": "Friday 22nd May 2020",
     "date": "2020-05-22T00:00:00+01:00",
     "description": "Azure content from Microsoft Docs, Gunnar Peipman - Programming Blog, ITOps Talk Blog, Microsoft Azure Blog, Thomas Maurer, Yet Another Developer Blog, The Azure Podcast, Channel 9",
     "draft": false,

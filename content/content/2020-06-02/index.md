@@ -1,5 +1,5 @@
 {
-  "title": "Tuesday 2nd June",
+  "title": "Tuesday 2nd June 2020",
   "date": "2020-06-02",
   "description": "Azure content from Azure DevOps Podcast, Microsoft Azure Blog, Microsoft Data Migration",
   "draft": false,

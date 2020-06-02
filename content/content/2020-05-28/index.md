@@ -1,5 +1,5 @@
 {
-    "title": "Thursday 28th May",
+    "title": "Thursday 28th May 2020",
     "date": "2020-05-28",
     "description": "Azure content from Build5Nines, Ctrl+Alt+Azure, Microsoft Azure Blog, Microsoft Data Migration, SQL Server Blog, Thomas Maurer",
     "draft": false,

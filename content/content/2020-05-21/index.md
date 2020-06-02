@@ -1,5 +1,5 @@
 {
-    "title": "Thursday 21st May",
+    "title": "Thursday 21st May 2020",
     "date": "2020-05-21T00:00:00+01:00",
     "description": "Azure content from MSBuild, Microsoft Azure Blog, Azure Cosmos Blog, Don't Code Tired, SQL Server Blog, John Papa,Code With Dan, Ctrl+Alt+Azure",
     "draft": false,

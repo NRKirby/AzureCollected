@@ -1,5 +1,5 @@
 {
-    "title": "Friday 29th May",
+    "title": "Friday 29th May 2020",
     "date": "2020-05-29",
     "description": "Azure content from Channel 9, Daily .NET Tips, John Papa, Microsoft Azure Blog, Microsoft Azure for Industry Podcast Microsoft Data Migration",
     "draft": false,
