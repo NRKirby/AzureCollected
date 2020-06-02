@@ -37,3 +37,6 @@ enableRobotsTXT = true
   [markup.goldmark]
     [markup.goldmark.renderer]
       unsafe = true
+
+[context.production.environment]
+  HUGO_VERSION = "0.70.0"
