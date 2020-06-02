@@ -16,6 +16,13 @@
                         </p>
                         <div class="mt-auto">
                             <div class="flex items-center justify-center pt-8 pb-2">
+                                {{ if .Params.HasMSBuild }}
+                                <span
+                                  class="inline-flex items-center px-3 py-1 mx-1 rounded-full text-sm font-medium leading-5 bg-red-200 text-red-800">
+                                  MSBuild
+                                </span>
+                                {{ end }}
+                                
                                 {{ if .Params.HasBlog }}
                                 <span
                                     class="inline-flex items-center px-3 py-1 mx-1 rounded-full text-sm font-medium leading-5 bg-purple-200 text-purple-800">
