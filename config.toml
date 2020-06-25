@@ -6,7 +6,7 @@ theme = "ananke"
 MetaDataFormat = "yaml"
 DefaultContentLanguage = "en"
 SectionPagesMenu = "main"
-Paginate = 7 # this is set low for demonstrating with dummy content. Set to a higher number
+Paginate = 2 # this is set low for demonstrating with dummy content. Set to a higher number
 googleAnalytics = "166614556-1"
 enableRobotsTXT = true
 

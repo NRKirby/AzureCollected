@@ -18,11 +18,11 @@
                             <div class="flex items-center justify-center pt-8 pb-2">
                                 {{ if .Params.HasMSBuild }}
                                 <span
-                                  class="inline-flex items-center px-3 py-1 mx-1 rounded-full text-sm font-medium leading-5 bg-red-200 text-red-800">
-                                  MSBuild
+                                    class="inline-flex items-center px-3 py-1 mx-1 rounded-full text-sm font-medium leading-5 bg-red-200 text-red-800">
+                                    MSBuild
                                 </span>
                                 {{ end }}
-                                
+
                                 {{ if .Params.HasBlog }}
                                 <span
                                     class="inline-flex items-center px-3 py-1 mx-1 rounded-full text-sm font-medium leading-5 bg-purple-200 text-purple-800">
@@ -48,6 +48,42 @@
                     </div>
                 </a>
             </div>
+            {{ end }}
+        </div>
+        <div>
+            {{ $paginator := .Paginate (where .Data.Pages "Type" "content") }}
+            {{ if gt $paginator.TotalPages 1 }}
+            <nav class="bg-white px-4 py-3 flex items-center justify-between border-t border-gray-200 sm:px-6">
+                <div class="hidden sm:block">
+                    <p class="text-sm leading-5 text-gray-700">
+                        Showing
+                        <span class="font-medium">
+                            {{ mul $paginator.PageNumber 2  }}
+                        </span>
+                        to
+                        <span class="font-medium">10
+                        </span>
+                        of
+                        <span class="font-medium">20
+                        </span>
+                        results
+                    </p>
+                </div>
+                <div class="flex-1 flex justify-between sm:justify-end">
+                    {{ if $paginator.HasPrev }}
+                    <a href="{{ $paginator.Prev.URL }}"
+                        class="relative inline-flex items-center px-4 py-2 border border-gray-300 text-sm leading-5 font-medium rounded-md text-gray-700 bg-white hover:text-gray-500 focus:outline-none focus:shadow-outline-blue focus:border-blue-300 active:bg-gray-100 active:text-gray-700 transition ease-in-out duration-150">
+                        Previous
+                    </a>
+                    {{ end }}
+                    {{ if $paginator.HasNext }}
+                    <a href="{{ $paginator.Next.URL }}"
+                        class="ml-3 relative inline-flex items-center px-4 py-2 border border-gray-300 text-sm leading-5 font-medium rounded-md text-gray-700 bg-white hover:text-gray-500 focus:outline-none focus:shadow-outline-blue focus:border-blue-300 active:bg-gray-100 active:text-gray-700 transition ease-in-out duration-150">
+                        Next
+                    </a>
+                    {{ end }}
+                </div>
+            </nav>
             {{ end }}
         </div>
     </div>
