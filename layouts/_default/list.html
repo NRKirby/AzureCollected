@@ -58,13 +58,15 @@
                     <p class="text-sm leading-5 text-gray-700">
                         Showing
                         <span class="font-medium">
-                            {{ mul $paginator.PageNumber 2  }}
+                            {{ add (mul (sub $paginator.PageNumber 1) $paginator.PageSize) 1 }}
                         </span>
                         to
-                        <span class="font-medium">10
+                        <span class="font-medium">
+                            {{ mul $paginator.PageNumber $paginator.NumberOfElements }}
                         </span>
                         of
-                        <span class="font-medium">20
+                        <span class="font-medium">
+                            {{ $paginator.TotalNumberOfElements }}
                         </span>
                         results
                     </p>
