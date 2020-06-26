@@ -5,8 +5,52 @@
         <h2 class="text-center md:text-left text-3xl font-semibold pt-8 pb-4 px-4">
             All content
         </h2>
+        <div>
+            {{ $paginator := .Paginate (where .Data.Pages "Type" "content") }}
+            {{ if gt $paginator.TotalPages 1 }}
+            <nav class="bg-gray-100 px-4 py-5 flex items-center justify-between border-t sm:px-6">
+                <div class="hidden sm:block">
+                    <p class="text-sm leading-5 text-gray-700">
+                        Showing
+                        <span class="font-medium">
+                            {{ add (mul (sub $paginator.PageNumber 1) $paginator.PageSize) 1 }}
+                        </span>
+                        to
+                        <span class="font-medium">
+                        {{ if not $paginator.HasNext }}
+                            {{ $paginator.TotalNumberOfElements }}
+                        {{ end }}
+                        {{ if $paginator.HasNext }}
+                            {{ mul $paginator.PageNumber $paginator.NumberOfElements }}
+                        {{ end }}
+                        </span>
+                        of
+                        <span class="font-medium">
+                            {{ $paginator.TotalNumberOfElements }}
+                        </span>
+                        results
+                    </p>
+                </div>
+                <div class="flex-1 flex justify-between sm:justify-end">
+                    {{ if $paginator.HasPrev }}
+                    <a href="{{ $paginator.Prev.URL }}"
+                        class="relative inline-flex items-center px-4 py-2 border border-gray-300 text-sm leading-5 font-medium rounded-md text-gray-700 bg-white hover:text-gray-500 focus:outline-none focus:shadow-outline-blue focus:border-blue-300 active:bg-gray-100 active:text-gray-700 transition ease-in-out duration-150">
+                        Previous
+                    </a>
+                    {{ end }}
+                    {{ if $paginator.HasNext }}
+                    <a href="{{ $paginator.Next.URL }}"
+                        class="ml-3 relative inline-flex items-center px-4 py-2 border border-gray-300 text-sm leading-5 font-medium rounded-md text-gray-700 bg-white hover:text-gray-500 focus:outline-none focus:shadow-outline-blue focus:border-blue-300 active:bg-gray-100 active:text-gray-700 transition ease-in-out duration-150">
+                        Next
+                    </a>
+                    {{ end }}
+                </div>
+            </nav>
+            {{ end }}
+        </div>
         <div class="mt-8 grid grid-cols-1 md:grid-cols-3 gap-4">
-            {{ range .Pages }}
+            {{ $paginator := .Paginate (where .Data.Pages "Type" "content") }}
+            {{ range $paginator.Pages }}
             <div class="max-w-xs mx-auto my-2 rounded overflow-hidden shadow-lg hover:shadow-outline">
                 <a href="{{ .Permalink }}" class="min-h-full">
                     <div class="px-4 py-2 flex flex-col h-full">
@@ -53,7 +97,7 @@
         <div>
             {{ $paginator := .Paginate (where .Data.Pages "Type" "content") }}
             {{ if gt $paginator.TotalPages 1 }}
-            <nav class="bg-white px-4 py-3 flex items-center justify-between border-t border-gray-200 sm:px-6">
+            <nav class="bg-gray-100 px-4 py-5 mt-5 flex items-center justify-between border-t sm:px-6">
                 <div class="hidden sm:block">
                     <p class="text-sm leading-5 text-gray-700">
                         Showing
@@ -62,7 +106,12 @@
                         </span>
                         to
                         <span class="font-medium">
-                            {{ mul $paginator.PageNumber $paginator.NumberOfElements }}
+                            {{ if not $paginator.HasNext }}
+                                {{ $paginator.TotalNumberOfElements }}
+                            {{ end }}
+                            {{ if $paginator.HasNext }}
+                                {{ mul $paginator.PageNumber $paginator.NumberOfElements }}
+                            {{ end }}
                         </span>
                         of
                         <span class="font-medium">
