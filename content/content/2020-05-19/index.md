@@ -1,54 +1,30 @@
 {
-    "title": "Tuesday 19th May 2020",
-    "date": "2020-05-19T00:00:00+01:00",
-    "description": "Azure content from MSBuild, Pete Codes blog, Code It Yourself, Visual Studio Geeks, Abhijit's Blog and Channel 9",
-    "draft": false,
-    "hasMSBuild" : true,
-    "hasBlog": true,
-    "hasPodcast": false,
-    "hasVideo": true,
-
-    "msbuild" : [
-        {
-            "title" : "Online sessions on Azure (49)",
-            "feedTitle" : "Microsoft Build",
-            "url" : "https://mybuild.microsoft.com/sessions?s=%257B%2522name%2522%253A%2522translate.refine.label.sort.relevance%2522%252C%2522type%2522%253A0%257D&t=%257B%2522from%2522%253A%25222020-05-19T16%253A00%253A00%252B01%253A00%2522%252C%2522to%2522%253A%25222020-05-19T23%253A59%253A00%252B01%253A00%2522%257D&q=Azure#top-anchor"
-        }
-    ],
-
-    "blogs" : [
-        {
-            "title" : "Hosting Blazor WebAssembly Hosted Apps in Azure App Service Web Apps",
-            "feedTitle" : "Pete Codes",
-            "url" : "https://www.petecodes.co.uk/hosting-blazor-webassembly-hosted-apps-in-azure-app-service-web-apps/"
-        },
-        {
-            "title" : "Azure Functions: use Blob Trigger with Private Endpoint",
-            "feedTitle" : "Code it Yourself…",
-            "url" : "https://carlos.mendible.com/2020/05/18/azure-functions-use-blob-trigger-with-private-endpoint/"
-        },
-        {
-            "title" : "10 Azure services that every .NET Developers, Consultant, and Architects should know and learn it well – Part II",
-            "feedTitle" : "Visual Studio Geeks",
-            "url" : "https://www.visualstudiogeeks.com/azure/devops/caf/cloud-adoption-framework"
-        },
-        {
-            "title" : "Plan your cloud migration with Microsoft Cloud Adoption Framework and Azure DevOps",
-            "feedTitle" : "Abhijit’s Blog",
-            "url" : "https://abhijitjana.net/2020/05/16/10-azure-services-that-every-net-developers-consultant-and-architects-should-know-and-learn-it-well-part-ii/"
-        }
-    ],
-
-    "podcasts" : [
-        
-    ],
-
-     "videos" : [
-        {
-            "title" : "Azure IoT Developer Specialty Certification",
-            "feedTitle" : "Channel 9",
-            "url" : "https://channel9.msdn.com/Shows/Internet-of-Things-Show/Azure-IoT-Developer-Specialty-Certification"
-        }
-    ]
+  "title": "Tuesday 19th May 2020",
+  "date": "2020-05-19",
+  "description": "Azure content from Azure DevOps Podcast, Channel 9, Posts on Code it Yourself...",
+  "draft": false,
+  "blogs": [
+    {
+      "title": "Azure Functions: use Blob Trigger with Private Endpoint",
+      "feedTitle": "Posts on Code it Yourself...",
+      "url": "https://carlos.mendible.com/2020/05/18/azure-functions-use-blob-trigger-with-private-endpoint/",
+      "description": "The intent of this post is to help you understand how to connect an Azure Function to a Storage Account privately so all traffic flows through a VNet therefore enhancing the security of your solutions and blobs.The Case:"
+    }
+  ],
+  "podcasts": [
+    {
+      "title": "Microsoft Build Week with Jeffrey Palermo - Episode 89",
+      "feedTitle": "Azure DevOps Podcast",
+      "url": "http://azuredevopspodcast.clear-measure.com/microsoft-build-week-with-jeffrey-palermo-episode-89",
+      "description": "Join Jeffrey Palermo this week for a quick solo episode about the virtual Microsoft Build Conference! The conference is happening over May 19th-20th and is entirely free this year — so be sure to register and don’t ..."
+    }
+  ],
+  "videos": [
+    {
+      "title": "Azure IoT Developer Specialty Certification | Internet of Things Show",
+      "feedTitle": "Channel 9",
+      "url": "https://channel9.msdn.com/Shows/Internet-of-Things-Show/Azure-IoT-Developer-Specialty-Certification",
+      "description": "Hear more about the new Microsoft Certified: Azure IoT Developer Specialty and resources to learn how to build IoT solutions with Azure IoT. Visit "
+    }
+  ]
 }
-

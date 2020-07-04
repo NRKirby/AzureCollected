@@ -1,33 +1,23 @@
 {
-    "title": "Thursday 14th May 2020",
-    "date": "2020-05-14T12:08:02+01:00",
-    "description": "Azure content from Azure Blog, Build5Nines and Thorsten Hans",
-    "draft": false,
-    "hasBlog": true,
-    "hasPodcast": false,
-    "hasVideo": false,
-
-    "blogs" : [
-        {
-            "title" : "Migrate to Azure: Save now, be future ready",
-            "feedTitle" : "Azure Blog",
-            "url" : "https://azure.microsoft.com/en-in/blog/migrate-to-azure-save-now-be-future-ready/"
-        },
-        {
-            "title" : "Saving Money with Azure Dev/Test Subscriptions",
-            "feedTitle" : "Build5Nines",
-            "url" : "https://build5nines.com/saving-money-with-azure-dev-test-subscriptions/"
-        },
-        {
-            "title" : "GENERATE DATA WITH DATABRICKS USING TPC-DS",
-            "feedTitle" : "Blue Granite Blog",
-            "url" : "https://www.blue-granite.com/blog/generate-big-datasets-with-databricks"
-        },
-        {
-            "title" : "Azure CLI Tips & Tricks 2 – Choose the best output format",
-            "feedTitle" : "Thorsten Hans",
-            "url" : "https://thorsten-hans.com/azure-cli-tips-and-tricks-2-choose-the-best-output-format"
-        }
-    ]
+  "title": "Thursday 14th May 2020",
+  "date": "2020-05-14",
+  "description": "Azure content from Ctrl+Alt+Azure, Microsoft Azure Blog",
+  "draft": false,
+  "blogs": [
+    {
+      "title": "Migrate to Azure: Save now, be future ready",
+      "feedTitle": "Microsoft Azure Blog",
+      "url": "https://azure.microsoft.com/blog/migrate-to-azure-save-now-be-future-ready/",
+      "description": "The global health crisis has transformed the way we work and live. Remote work has surged across industries, and the ability to scale and manage your business from anywhere has become essential. As our customers are moving beyond resolving immediate ..."
+    }
+  ],
+  "podcasts": [
+    {
+      "title": "029 - What is Azure Web Application Firewall?",
+      "feedTitle": "Ctrl+Alt+Azure",
+      "url": "https://share.transistor.fm/s/037faf08",
+      "description": "In this episode, we take a look at Web Application Firewall, or WAF. We've previously discussed about Azure CDN (Episode 023) and remote access (Episode 009) so now it was a good time to focus on WAF itself. We also reminisce a little bit about the p..."
+    }
+  ],
+  "videos": []
 }
-
