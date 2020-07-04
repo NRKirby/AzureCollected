@@ -17,13 +17,13 @@
       </span>
       <ul class="mx-4">
         {{ range .Params.msbuild }}
-        <li class="py-4 md:text-xl text-lg ">
+        <li class="py-4">
           <div>
-            <a href="{{ .url }}" class="font-medium text-blue-900 hover:underline">
+            <a href="{{ .url }}" class="text-lg md:text-xl lg:text-2xl font-medium text-blue-900 hover:underline">
               {{ .title }}
-            </a> <span class="text-md text-gray-600"> - {{ .feedTitle }}</span>
+            </a> <span class="font-normal text-lg text-gray-700"> - {{ .feedTitle }}</span>
           </div>
-          <p class="pr-6 pt-1 md-pt-2 md:text-md text-sm text-blue-800">{{ .description }}</p>
+          <p class="pr-6 pt-1 md-pt-2 text-sm md:text-md lg:text-lg text-gray-600">{{ .description }}</p>
         </li>
         {{end }}
       </ul>
@@ -36,13 +36,13 @@
       </span>
       <ul class="mx-4">
         {{ range .Params.blogs }}
-        <li class="py-4 md:text-xl text-lg">
+        <li class="py-4">
           <div>
-            <a href="{{ .url }}" class="font-medium text-blue-900 hover:underline">
+            <a href="{{ .url }}" class="text-lg md:text-xl lg:text-2xl font-medium text-blue-900 hover:underline">
               {{ .title }}
-            </a> <span class="text-md text-gray-600"> - {{ .feedTitle }}</span>
+            </a> <span class="font-normal text-lg text-gray-700"> - {{ .feedTitle }}</span>
           </div>
-          <p class="pr-6 pt-1 md-pt-2 md:text-md text-sm text-blue-800">{{ .description }}</p>
+          <p class="pr-6 pt-1 md-pt-2 text-sm md:text-md lg:text-lg text-gray-600">{{ .description }}</p>
         </li>
         {{end }}
       </ul>
@@ -55,13 +55,13 @@
       </span>
       <ul class="mx-4">
         {{ range .Params.podcasts }}
-        <li class="py-4 md:text-xl text-lg ">
+        <li class="py-4">
           <div>
-            <a href="{{ .url }}" class="font-medium text-blue-900 hover:underline">
+            <a href="{{ .url }}" class="text-lg md:text-xl lg:text-2xl font-medium text-blue-900 hover:underline">
               {{ .title }}
-            </a> <span class="text-md text-gray-600"> - {{ .feedTitle }}</span>
+            </a> <span class="font-normal text-lg text-gray-700"> - {{ .feedTitle }}</span>
           </div>
-          <p class="pr-6 pt-1 md-pt-2 md:text-md text-sm text-blue-800">{{ .description }}</p>
+          <p class="pr-6 pt-1 md-pt-2 text-sm md:text-md lg:text-lg text-gray-600">{{ .description }}</p>
         </li>
         {{end }}
       </ul>
@@ -74,13 +74,13 @@
       </span>
       <ul class="mx-4">
         {{ range .Params.videos }}
-        <li class="py-4 md:text-xl text-lg ">
+        <li class="py-4">
           <div>
-            <a href="{{ .url }}" class="font-medium text-blue-900 hover:underline">
+            <a href="{{ .url }}" class="text-lg md:text-xl lg:text-2xl font-medium text-blue-900 hover:underline">
               {{ .title }}
-            </a> <span class="text-md text-gray-600"> - {{ .feedTitle }}</span>
+            </a> <span class="font-normal text-lg text-gray-700"> - {{ .feedTitle }}</span>
           </div>
-          <p class="pr-6 pt-1 md-pt-2 md:text-md text-sm text-blue-800">{{ .description }}</p>
+          <p class="pr-6 pt-1 md-pt-2 text-sm md:text-md lg:text-lg text-gray-600">{{ .description }}</p>
         </li>
         {{end }}
       </ul>
