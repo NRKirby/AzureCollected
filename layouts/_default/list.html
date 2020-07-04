@@ -17,28 +17,28 @@
                         </p>
                         <div class="mt-auto">
                             <div class="flex items-center justify-center pt-8 pb-2">
-                                {{ if .Params.HasMSBuild }}
+                                {{ if gt (.Params.msBuild) 0 }}
                                 <span
                                     class="inline-flex items-center px-3 py-1 mx-1 rounded-full text-sm font-medium leading-5 bg-red-200 text-red-800">
                                     MSBuild
                                 </span>
                                 {{ end }}
 
-                                {{ if .Params.HasBlog }}
+                                {{ if gt (.Params.blogs) 0 }}
                                 <span
                                     class="inline-flex items-center px-3 py-1 mx-1 rounded-full text-sm font-medium leading-5 bg-purple-200 text-purple-800">
                                     Blog
                                 </span>
                                 {{ end }}
 
-                                {{ if .Params.HasPodcast }}
+                                {{ if gt (.Params.podcasts) 0 }}
                                 <span
                                     class="inline-flex items-center px-3 py-1 mx-1 rounded-full text-sm font-medium leading-5 bg-orange-200 text-orange-800">
                                     Podcast
                                 </span>
                                 {{ end }}
 
-                                {{ if .Params.HasVideo }}
+                                {{ if gt (.Params.blogs) 0 }}
                                 <span
                                     class="inline-flex items-center  px-3 py-1 mx-1 rounded-full text-sm font-medium leading-5 bg-teal-200 text-teal-800">
                                     Video
