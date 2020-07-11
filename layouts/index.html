@@ -19,7 +19,7 @@
     {{ end }}
 
     {{ $n_posts := $.Param "recent_posts_number" | default 3 }}
-    <div class="mt-8 grid grid-cols-1 md:grid-cols-2 gap-4">
+    <div class="mt-6 grid grid-cols-1 md:grid-cols-2 gap-4">
       {{/* Range through the first $n_posts items of the section */}}
       {{ range (first $n_posts $section) }}
       <div class="max-w-xs mx-auto my-2 rounded overflow-hidden shadow-lg hover:shadow-outline">
