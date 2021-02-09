@@ -10,7 +10,7 @@
             {{ range $paginator.Pages }}
             <div class="max-w-xs mx-auto my-2 rounded overflow-hidden shadow-lg hover:shadow-outline">
                 <a href="{{ .Permalink }}" class="min-h-full">
-                    <div class="px-4 py-2 flex flex-col h-full">
+                    <div class="px-4 py-2 flex flex-col h-full" style="min-width: 320px">
                         <div class="text-gray-700 text-xl mb-2">{{ .Title }}</div>
                         <p class="text-gray-600 text-base">
                             {{ .Description }}
